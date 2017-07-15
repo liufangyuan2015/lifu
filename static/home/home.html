@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        color: #333;
+      }
+      html{
+        font-size: 12px;
+      }
+      .wrapper{
+        width: 100%;
+        height: 100%;
+       }
+      .header{
+        position: fixed;
+        width: 100%;
+        height: 8rem;
+      }
+      .header-top{
+        width: 100%;
+        height: 4rem;
+        background-image: url('header.png');
+        background-repeat: no-repeat;
+        background-size:50%;
+        background-position: 50%;
+        background-color: #89BE48;
+      }
+      .header-top span {
+        background-image: url("search.png");
+        background-repeat: no-repeat;
+        background-size:45%;
+        background-position: 50%;
+        position: absolute;
+        z-index: 1000;
+        top:0;
+        right: 0;
+        display: inline-block;
+        width: 3.66666666rem;
+        height: 3.666666666rem;
+      }
+
+      .header-bottom{
+        width: 100%;
+        height: 4rem;
+      }
+      .header-bottom .nav{
+        height: 4rem;
+        white-space: nowrap;
+        width: 800px;
+      }
+      .header-bottom .nav li{
+        float: left;
+        width: 80px;
+        line-height: 4rem;
+        height:4rem;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom: 2px solid #ddd;
+      }
+      .header-bottom .nav li a{
+        font-size: 1.35rem;
+      }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="header-top">
+      <a href="#">
+        <span></span>
+      </a>
+    </div>
+    <div class="header-bottom">
+      <ul class="nav">
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">新品</a>
+        </li>
+        <li>
+          <a href="#">家务</a>
+        </li>
+        <li>
+          <a href="#">下厨</a>
+        </li>
+        <li>
+        <a href="#">家居服</a>
+      </li>
+        <li>
+          <a href="#">生活</a>
+        </li>
+        <li>
+          <a href="#">软装</a>
+        </li>
+        <li>
+          <a href="#">床品</a>
+        </li>
+        <li>
+          <a href="#">工作和旅行</a>
+        </li>
+        <li>
+          <a href="#">了解LifeVC</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main"></div>
+  <div class="footer"></div>
+</div>
+
+</body>
+<script>
+//  console.log(document.documentElement.clientWidth)
+</script>
+</html>
